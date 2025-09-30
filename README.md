@@ -2,6 +2,11 @@
 
 This repo is home to sharable data and processing scripts supporting the NYC Public Space App.
 
+NYC Public Space App Links:
+- [iOS App Store](https://apps.apple.com/us/app/nyc-public-space/id6737332320)
+- [Android Play Store](https://play.google.com/store/apps/details?id=com.nycpublicspace&hl=en_US)
+- [Web Version (https://nycpublicspace.org/)](https://nycpublicspace.org/)
+
 ## About the data
 
 The dataset behind the NYC Public Space App is a consolidated dataset of public spaces in New York City, spanning multiple state, local, and federal agencies and including some more ambiguous spaces that are open to the public via the good will of private owners.
