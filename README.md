@@ -7,6 +7,9 @@ NYC Public Space App Links:
 - [Android Play Store](https://play.google.com/store/apps/details?id=com.nycpublicspace&hl=en_US)
 - [Web Version (https://nycpublicspace.org/)](https://nycpublicspace.org/)
 
+  <img width="236" height="512" alt="public-space" src="https://github.com/user-attachments/assets/da129045-cf8b-4c6f-9433-2267416d1779" />
+
+
 ## About the data
 
 The dataset behind the NYC Public Space App is a consolidated dataset of public spaces in New York City, spanning multiple state, local, and federal agencies and including some more ambiguous spaces that are open to the public via the good will of private owners.
