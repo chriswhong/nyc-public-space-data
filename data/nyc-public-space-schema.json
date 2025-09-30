@@ -1,0 +1,135 @@
+{
+    "type": "object",
+    "properties": {
+        "firestore_id": {
+            "type": "string",
+            "description": "The Firestore ID of the document."
+        },
+        "type": {
+            "type": "string",
+            "enum": ["park", "plaza", "stp", "misc", "wpaa"],
+            "description": "The type of the space, defined by a limited set of categories."
+        },
+        "space_id": {
+            "type": "string",
+            "description": "A kebab-case unique identifier for the space, usually derived from the name.",
+            "unique": true
+        },
+        "name": {
+            "type": "string",
+            "description": "The name of the space."
+        },
+        "description": {
+            "type": "string",
+            "description": "A brief description of the space."
+        },
+        "geometry": {
+            "type": "string",
+            "description": "The geometry of the location in GeoJSON geometry format."
+        },
+        "location": {
+            "type": "string",
+            "description": "The address or general location of the space."
+        },
+        "url": {
+            "type": ["string", "array"],
+            "items": {
+              "type": "string"
+            },
+            "description": "A URL or an array of URLs for more information about the space."
+        },
+        "amenities": {
+            "type": "object",
+            "properties": {
+                "indoors": {
+                    "type": "boolean",
+                    "description": "Indicates if the space is indoors."
+                },
+                "accessible": { 
+                    "type": "boolean",
+                    "description": "Indicates if the space is wheelchair accessible."
+                },
+                "restrooms": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has restrooms."
+                },
+                "playground": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has a playground."
+                },
+                "water_feature": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has a water feature."
+                },
+                "drinking_fountain": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has a drinking fountain."
+                },
+                "dog_park": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has a dog park."
+                },
+                "seating": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has seating."
+                },
+                "tables": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has tables."
+                },
+                "wifi": {
+                    "type": "boolean",
+                    "description": "Indicates if free wifi is available in this space."
+                },
+                "lawn": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has lawns for recreation."
+                },
+                "basketball": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has basketball courts."
+                },
+                "tennis": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has tennis courts."
+                },
+                "trees": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has trees."
+                },
+                "art": {
+                    "type": "boolean",
+                    "description": "Indicates if the space has art installations."
+                },
+            },
+            "additionalProperties": false,
+            "description": "The amenities available at the space."
+        },
+        "archived": {
+            "type": "boolean",
+            "description": "Indicates if the space is archived and will not be included in the displayed data."
+        },
+
+        // unused
+        "subtype": {
+            "type": "string",
+            "description": "Additional categorization of the space, if applicable."
+        },
+        "closed_for_construction": {
+            "type": "string",
+            "description": "Indicates whether the space is closed for construction."
+        },
+        "google_maps_id": {
+            "type": "string",
+            "description": "Google Maps identifier for the location."
+        },
+    },
+    "required": [
+        "description",
+        "geometry",
+        "location",
+        "name",
+        "space_id",
+        "type"
+    ]
+}
