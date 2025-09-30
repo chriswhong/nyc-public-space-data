@@ -15,7 +15,7 @@ The data were first compiled by combining published data from various agencies i
 
 The data shared here are snapshots of data from a database. Changes are committed periodically. I may automate this to monthly exports if there is demand.
 
-The published dataset files are located in `/data`
+The published dataset files are located in [`/data`](https://github.com/chriswhong/nyc-public-space-data/tree/main/data)
 
 ## Scripts
 
