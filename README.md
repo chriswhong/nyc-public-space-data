@@ -9,6 +9,10 @@ NYC Public Space App Links:
 
   <img width="236" height="512" alt="public-space" src="https://github.com/user-attachments/assets/da129045-cf8b-4c6f-9433-2267416d1779" />
 
+## Related Repos
+
+**[`chriswhong/nyc-public-space-fultter`](https://github.com/chriswhong/nyc-public-space-flutter)** - Source code for the app (Flutter)
+
 
 ## About the data
 
